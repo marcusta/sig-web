@@ -112,19 +112,19 @@ const navigation = `
           <span></span>
         </div>
         <div class="nav-links">
-          <a href="/sig-web/view/main">Start</a>
-          <a href="/sig-web/view/prislista">Prislista</a>
-          <a href="/sig-web/view/opening_hours">Öppettider</a>
+          <a href="/web/view/main">Start</a>
+          <a href="/web/view/prislista">Prislista</a>
+          <a href="/web/view/opening_hours">Öppettider</a>
           <a href="https://www.matchi.se/facilities/swedenindoorgolf">Boka bana</a>
-          <div class="dropdown" onclick="window.location.href='/sig-web/view/tavlingar'">
-            <a href="/sig-web/view/tavlingar" class="dropdown-toggle">Tävlingar</a>
+          <div class="dropdown" onclick="window.location.href='/web/view/tavlingar'">
+            <a href="/web/view/tavlingar" class="dropdown-toggle">Tävlingar</a>
             <div class="dropdown-menu">
               <a href="https://simulatorgolftour.com/tour/81" class="dropdown-item">SGT + HT Indoor Veckoliga</a>
               <a href="#" class="dropdown-item">H40+ Scratch Indoor</a>
             </div>
           </div>
-          <a href="/sig-web/view/about_us">Om oss</a>
-          <a href="/sig-web/view/faq">FAQ</a>
+          <a href="/web/view/about_us">Om oss</a>
+          <a href="/web/view/faq">FAQ</a>
           <a href="#">Support</a>
           <a href="#">Golfshop/Lektioner</a>
         </div>
