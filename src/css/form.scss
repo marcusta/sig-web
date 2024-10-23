@@ -1,0 +1,52 @@
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #347da8;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #347da8;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #347da8;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-bottom: 2px solid #347da8;
+}
+
+.contact-form .button {
+  margin-top: 20px;
+  float: right;
+  /* This will align the button to the right */
+}
+
+/* Clear the float to prevent layout issues */
+.contact-form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Ensure the textarea doesn't have a default resize handle */
+.form-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}

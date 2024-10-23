@@ -1,0 +1,117 @@
+.site-footer {
+  background-color: #006aa8;
+  color: #ffffff;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 40px;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+  color: #ffc107;
+  font-size: 18px;
+}
+
+.footer-section:last-child {
+  margin-right: 0;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 5px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  color: #ffc107;
+  font-size: 16px;
+}
+
+.social-icon::before {
+  font-family: "ElegantIcons";
+}
+
+.facebook-icon::before {
+  content: "\e093";
+}
+
+.instagram-icon::before {
+  content: "\e09a";
+}
+
+.footer-section .social-icon:hover {
+  background-color: #ffc107;
+  color: #006aa8;
+}
+
+.footer-logo {
+  max-width: 100px;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}

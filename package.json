@@ -1,0 +1,32 @@
+{
+  "name": "sig-web",
+  "module": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "migrate": "bun src/db/migrate.ts",
+    "db:generate": "bunx drizzle-kit generate --dialect sqlite --schema ./src/db/schema.ts --out ./src/db/migrations",
+    "db:studio": "bunx drizzle-kit studio --dialect sqlite --schema ./src/db/schema.ts --out ./src/db/migrations",
+    "dev:server": "bun --watch src/server.ts",
+    "dev:sass": "sass --watch src/css/main.scss:public/css/main.css",
+    "sass:build": "sass src/css/main.scss:public/css/main.css --style compressed",
+    "dev": "npm-run-all dev:server dev:sass"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.12",
+    "drizzle-kit": "^0.26.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@elysiajs/static": "^1.1.1",
+    "better-sqlite3": "^11.4.0",
+    "drizzle-orm": "^0.35.2",
+    "elysia": "^1.1.22",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.80.3",
+    "sharp": "^0.33.5",
+    "winston": "^3.15.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
