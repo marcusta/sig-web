@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://app.swedenindoorgolf.se/web/main</loc>
+    <lastmod>2024-10-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Prislista page -->
+  <url>
+    <loc>https://app.swedenindoorgolf.se/web/prislista</loc>
+    <lastmod>2024-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Opening hours page -->
+  <url>
+    <loc>https://app.swedenindoorgolf.se/web/opening_hours</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <!-- Optional: If you have product images -->
+    <image:image>
+      <image:loc>https://app.swedenindoorgolf.se/web/img/orig/sig-2021-1000px-4-av-16-700-min.jpg</image:loc>
+      <image:title>Golf simulator</image:title>
+    </image:image>
+  </url>
+
+  <!-- About page -->
+  <url>
+    <loc>https://app.swedenindoorgolf.se/web/about_us</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Tavlingar page -->
+  <url>
+    <loc>https://app.swedenindoorgolf.se/web/tavlingar</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- FAQ page -->
+  <url>
+    <loc>https://app.swedenindoorgolf.se/web/faq_page</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,52 @@
+# Default robots.txt template
+# Main directive for all web crawlers
+User-agent: *
+# Allow crawling of all content by default
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /includes/
+Disallow: /backend/
+
+# Prevent crawling of search result pages
+Disallow: /search
+Disallow: /*?q=
+Disallow: /*?s=
+
+# Prevent crawling of user-specific content
+Disallow: /users/
+Disallow: /account/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Prevent indexing of duplicate content
+Disallow: /print/
+Disallow: /print$
+Disallow: /*?print=
+Disallow: /*?format=
+
+# Crawl-delay directive (optional, in seconds)
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://app.swedenindoorgolf.se/sitemap.xml
+
+# Block AI training crawlers (optional)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
