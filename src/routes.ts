@@ -24,6 +24,17 @@ const routes = new Elysia()
   .get("/:path", ({ params, set }) => {
     const path = params.path;
     return renderPage(path, set);
+  })
+  .get("/sitemap.xml", ({ set }) => {
+    // read sitemap.xml file
+    const sitemap = Bun.file("public/sitemap.xml");
+    set.headers["Content-Type"] = "application/xml";
+    return sitemap.text();
+  })
+  .get("/robots.txt", ({ set }) => {
+    const robots = Bun.file("public/robots.txt");
+    set.headers["Content-Type"] = "text/plain";
+    return robots.text();
   });
 
 function renderPage(
